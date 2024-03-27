@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    font-family: "roboto,sans-serif";
+    margin: 0;
+}
+
+
+header .contenedor{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 243, 232);
+}
+
+header .contenedor .nombre{
+    
+    text-align: center;
+ 
+}
+header .contenedor-logo-nombre{
+    display: flex;
+    
+}
+.barra{
+    border: none;
+}
+.logo img{
+    position: absolute;
+    visibility: hidden;
+}
+
+.titulo{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(230, 212, 58);
+}
+.eslogan{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color:  rgb(185, 160, 14);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px ;
+}
+a{
+    text-decoration: none;
+    margin:0 2px;
+    text-align: center;
+    color: rgb(146, 143, 81);
+}
+a:hover{
+    color: rgb(185, 160, 14);
+}
+.Introduccion{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgb(30,30,30,0.5),
+        rgb(30,30,30,0.5)
+    ),url("IMG/intro2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.Introduccion h1{
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    margin: 0 10px;
+}
+.Introduccion button{
+    margin-top: 35px;
+    font-size: 1.5em;
+    padding: 5px;
+    border-radius:  10px;
+    background-color:rgb(185, 160, 14) ;
+    box-shadow: 5px 5px rgb(30,30,30,0.5);
+
+}
+.Introduccion button:hover{
+    color: white;
+    background-color: rgb(218, 197, 82);
+}
+/*--------------------------------------------------------------*/
+/*SECCIONES*/
+/*--------------------------------------------------------------*/
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-self:center;
+    align-items: end;
+}
+.imagenes section{
+
+    width: 50%;
+    height: 50vh;
+    
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:top;
+    
+}
+.imagen1{
+    background-image: linear-gradient(
+        0deg,
+        rgb(30,30,30,.5),
+        rgb(30,30,30,.5)),
+        url(IMG/img1.jpg);
+}
+.imagen2{
+    background-image: linear-gradient(
+        0deg,
+        rgb(30,30,30,.5),
+        rgb(30,30,30,.5)),url(IMG/img2.jpg);
+}
+.imagen3{
+    background-image:linear-gradient(
+        0deg,
+        rgb(30,30,30,.5),
+        rgb(30,30,30,.5)), url(IMG/img3.jpg);
+}
+.imagen4{
+    background-image: linear-gradient(
+        0deg,
+        rgb(30,30,30,.5),
+        rgb(30,30,30,.5)),url(IMG/ima4.jpeg);
+}
+
+@media (min-width : 600px){
+    header .contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 15px 0;
+        
+    }
+    
+    header .contenedor .nombre{
+        text-align: left;
+        margin: 0;
+        padding-left: 5px;
+        
+    }
+    .nombre .titulo{
+        font-size: 1.4em;
+    }
+    header .contenedor-logo-nombre{
+        margin: 0 10px;
+    }
+    .nombre .eslogan{
+        font-size: ;
+    }
+    .barra{
+
+        border-left: 2px solid rgb(185, 160, 14) ;
+        margin-left: 15px;
+    }
+    
+    .eslogan{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        
+    }
+    a{
+        margin: 0 15px;
+    }
+    .Introduccion{
+        height: 60vh;
+    }
+    .logo{
+        position: relative;
+        
+        
+    }
+    .logo img{
+        visibility: visible;
+        position: relative;
+        display: block;
+        height: auto;
+    }
+    .opaco{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(180,180,180,0.2);
+    }
+}
